@@ -23,4 +23,11 @@ public class Employee_Payroll_Test {
         Assertions.assertEquals(1,result);
     }
 
+    @Test
+    public void givenDateRangeToEmployeePayRollInDB_WhenRetrieved_DataShouldMatchFilteredEmployeeCount() {
+        Employee_payroll employee_Payroll = new Employee_payroll();
+        List<EmployeePayrollData>employeePayrollDataList=employee_Payroll.employeeDetailsfromDate();
+        Assertions.assertEquals(2,employeePayrollDataList.size());
+    }
+
 }

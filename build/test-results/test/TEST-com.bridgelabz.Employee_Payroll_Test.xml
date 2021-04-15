@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.bridgelabz.Employee_Payroll_Test" tests="2" skipped="0" failures="0" errors="0" timestamp="2021-04-15T06:23:35" hostname="DESKTOP-011U31P" time="15.381">
+<testsuite name="com.bridgelabz.Employee_Payroll_Test" tests="3" skipped="0" failures="0" errors="0" timestamp="2021-04-15T06:53:07" hostname="DESKTOP-011U31P" time="4.156">
   <properties/>
-  <testcase name="givenNewSalaryForEmployee_whenUpdate_shouldSyncWithDB()" classname="com.bridgelabz.Employee_Payroll_Test" time="15.246"/>
-  <testcase name="givenEmployeePayroll_WhenRetrieved_ShouldMatchEmpCount()" classname="com.bridgelabz.Employee_Payroll_Test" time="0.133"/>
+  <testcase name="givenNewSalaryForEmployee_whenUpdate_shouldSyncWithDB()" classname="com.bridgelabz.Employee_Payroll_Test" time="3.008"/>
+  <testcase name="givenEmployeePayroll_WhenRetrieved_ShouldMatchEmpCount()" classname="com.bridgelabz.Employee_Payroll_Test" time="0.271"/>
+  <testcase name="givenDateRangeToEmployeePayRollInDB_WhenRetrieved_DataShouldMatchFilteredEmployeeCount()" classname="com.bridgelabz.Employee_Payroll_Test" time="0.874"/>
   <system-out><![CDATA[Connecting to database: jdbc:mysql://localhost:3307/payroll_service?useSSL=false
-Connection successful: com.mysql.cj.jdbc.ConnectionImpl@50cd453c
+Connection successful: com.mysql.cj.jdbc.ConnectionImpl@15e962b1
+1
 Connecting to database: jdbc:mysql://localhost:3307/payroll_service?useSSL=false
-Connection successful: com.mysql.cj.jdbc.ConnectionImpl@23d3b032
+Connection successful: com.mysql.cj.jdbc.ConnectionImpl@2a0c1338
 +++++++++++++++++++++++++++
 Id: 1
 FirstName: bill
@@ -26,13 +28,30 @@ StartDate: null
 Salary: 0.0
 Gender: null
 Connecting to database: jdbc:mysql://localhost:3307/payroll_service?useSSL=false
-Connection successful: com.mysql.cj.jdbc.ConnectionImpl@649bbfaa
+Connection successful: com.mysql.cj.jdbc.ConnectionImpl@6e456a81
+1
+Connecting to database: jdbc:mysql://localhost:3307/payroll_service?useSSL=false
+Connection successful: com.mysql.cj.jdbc.ConnectionImpl@11821abc
 +++++++++++++++++++++++++++
 Id: 1
 FirstName: bill
 StartDate: null
 Salary: 0.0
 Gender: null
++++++++++++++++++++++++++++
+Id: 2
+FirstName: Terise
+StartDate: null
+Salary: 0.0
+Gender: null
++++++++++++++++++++++++++++
+Id: 3
+FirstName: charle
+StartDate: null
+Salary: 0.0
+Gender: null
+Connecting to database: jdbc:mysql://localhost:3307/payroll_service?useSSL=false
+Connection successful: com.mysql.cj.jdbc.ConnectionImpl@68f5de7f
 +++++++++++++++++++++++++++
 Id: 2
 FirstName: Terise
