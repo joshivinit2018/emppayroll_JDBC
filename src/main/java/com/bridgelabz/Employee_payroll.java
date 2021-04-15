@@ -2,7 +2,6 @@ package com.bridgelabz;
 
 import java.sql.*;
 import java.util.ArrayList;
-import java.util.Enumeration;
 import java.util.List;
 
 public class Employee_payroll {
@@ -53,14 +52,18 @@ public class Employee_payroll {
         return employeePayrollDataArrayList;
     }
 
-    public void updateData(){
-        String sql_query="Update employee_payroll set salary='30000000' where id='2'; ";
+    public long updateData(){
         try {
             Connection connection=this.getConnection();
-            Statement statement=connection.createStatement();
-            long resultSet=statement.executeLargeUpdate(sql_query);
+            PreparedStatement preparedStatement=connection.prepareStatement("Update employee_payroll set salary=? where id=? ; ");
+            preparedStatement.setDouble(1,300000);
+            preparedStatement.setInt(2,3);
+            long resultSet=preparedStatement.executeUpdate();
+            System.out.println(resultSet);
+            return resultSet;
         } catch (SQLException throwables) {
             throwables.printStackTrace();
         }
+        return 0;
     }
 }

@@ -19,5 +19,8 @@ public class Employee_Payroll_Test {
         employee_Payroll.updateData();
         List<EmployeePayrollData> employeePayrollDataList=employee_Payroll.readData();
         Assertions.assertEquals(3,employeePayrollDataList.size());
+        long result=employee_Payroll.updateData();
+        Assertions.assertEquals(1,result);
     }
+
 }
