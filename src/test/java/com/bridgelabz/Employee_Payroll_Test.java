@@ -12,4 +12,12 @@ public class Employee_Payroll_Test {
         List<EmployeePayrollData> employeePayrollDataList= employee_Payroll.readData();
         Assertions.assertEquals(3,employeePayrollDataList.size());
     }
+
+    @Test
+    public void givenNewSalaryForEmployee_whenUpdate_shouldSyncWithDB() {
+        Employee_payroll employee_Payroll = new Employee_payroll();
+        employee_Payroll.updateData();
+        List<EmployeePayrollData> employeePayrollDataList=employee_Payroll.readData();
+        Assertions.assertEquals(3,employeePayrollDataList.size());
+    }
 }

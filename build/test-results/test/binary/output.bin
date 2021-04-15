@@ -1,20 +1,42 @@
 RConnecting to database: jdbc:mysql://localhost:3307/payroll_service?useSSL=false
-AConnection successful: com.mysql.cj.jdbc.ConnectionImpl@fbcb5d3
+BConnection successful: com.mysql.cj.jdbc.ConnectionImpl@50cd453c
+RConnecting to database: jdbc:mysql://localhost:3307/payroll_service?useSSL=false
+BConnection successful: com.mysql.cj.jdbc.ConnectionImpl@23d3b032
 +++++++++++++++++++++++++++
 Id: 1
 FirstName: bill
-LastName: null
-Address: 0.0
-City: null
+StartDate: null
+Salary: 0.0
+Gender: null
 +++++++++++++++++++++++++++
 Id: 2
 FirstName: Terise
-LastName: null
-Address: 0.0
-City: null
+StartDate: null
+Salary: 0.0
+Gender: null
 +++++++++++++++++++++++++++
 Id: 3
 FirstName: charle
-LastName: null
-Address: 0.0
-City: null
+StartDate: null
+Salary: 0.0
+Gender: null
+RConnecting to database: jdbc:mysql://localhost:3307/payroll_service?useSSL=false
+BConnection successful: com.mysql.cj.jdbc.ConnectionImpl@649bbfaa
++++++++++++++++++++++++++++
+Id: 1
+FirstName: bill
+StartDate: null
+Salary: 0.0
+Gender: null
++++++++++++++++++++++++++++
+Id: 2
+FirstName: Terise
+StartDate: null
+Salary: 0.0
+Gender: null
++++++++++++++++++++++++++++
+Id: 3
+FirstName: charle
+StartDate: null
+Salary: 0.0
+Gender: null

@@ -1,27 +1,50 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.bridgelabz.Employee_Payroll_Test" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-04-15T05:39:53" hostname="DESKTOP-011U31P" time="11.529">
+<testsuite name="com.bridgelabz.Employee_Payroll_Test" tests="2" skipped="0" failures="0" errors="0" timestamp="2021-04-15T06:23:35" hostname="DESKTOP-011U31P" time="15.381">
   <properties/>
-  <testcase name="givenEmployeePayroll_WhenRetrieved_ShouldMatchEmpCount()" classname="com.bridgelabz.Employee_Payroll_Test" time="11.529"/>
+  <testcase name="givenNewSalaryForEmployee_whenUpdate_shouldSyncWithDB()" classname="com.bridgelabz.Employee_Payroll_Test" time="15.246"/>
+  <testcase name="givenEmployeePayroll_WhenRetrieved_ShouldMatchEmpCount()" classname="com.bridgelabz.Employee_Payroll_Test" time="0.133"/>
   <system-out><![CDATA[Connecting to database: jdbc:mysql://localhost:3307/payroll_service?useSSL=false
-Connection successful: com.mysql.cj.jdbc.ConnectionImpl@fbcb5d3
+Connection successful: com.mysql.cj.jdbc.ConnectionImpl@50cd453c
+Connecting to database: jdbc:mysql://localhost:3307/payroll_service?useSSL=false
+Connection successful: com.mysql.cj.jdbc.ConnectionImpl@23d3b032
 +++++++++++++++++++++++++++
 Id: 1
 FirstName: bill
-LastName: null
-Address: 0.0
-City: null
+StartDate: null
+Salary: 0.0
+Gender: null
 +++++++++++++++++++++++++++
 Id: 2
 FirstName: Terise
-LastName: null
-Address: 0.0
-City: null
+StartDate: null
+Salary: 0.0
+Gender: null
 +++++++++++++++++++++++++++
 Id: 3
 FirstName: charle
-LastName: null
-Address: 0.0
-City: null
+StartDate: null
+Salary: 0.0
+Gender: null
+Connecting to database: jdbc:mysql://localhost:3307/payroll_service?useSSL=false
+Connection successful: com.mysql.cj.jdbc.ConnectionImpl@649bbfaa
++++++++++++++++++++++++++++
+Id: 1
+FirstName: bill
+StartDate: null
+Salary: 0.0
+Gender: null
++++++++++++++++++++++++++++
+Id: 2
+FirstName: Terise
+StartDate: null
+Salary: 0.0
+Gender: null
++++++++++++++++++++++++++++
+Id: 3
+FirstName: charle
+StartDate: null
+Salary: 0.0
+Gender: null
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

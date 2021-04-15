@@ -34,9 +34,9 @@ public class Employee_payroll {
                 System.out.println("+++++++++++++++++++++++++++");
                 System.out.println("Id: "+id);
                 System.out.println("FirstName: "+name);
-                System.out.println("LastName: "+date);
-                System.out.println("Address: "+salary);
-                System.out.println("City: "+gender);
+                System.out.println("StartDate: "+date);
+                System.out.println("Salary: "+salary);
+                System.out.println("Gender: "+gender);
 
                 EmployeePayrollData employeePayrollData=new EmployeePayrollData(resultSet.getInt(1),
                         resultSet.getString(2),
@@ -45,17 +45,22 @@ public class Employee_payroll {
                         resultSet.getString(5));
                 employeePayrollDataArrayList.add(employeePayrollData);
             }
-        } catch (SQLException throwable) {
-            throwable.printStackTrace();
+            statement.close();
+            connection.close();
+        } catch (SQLException throwables) {
+            throwables.printStackTrace();
         }
         return employeePayrollDataArrayList;
     }
 
-    public static void listdrivers(){
-        Enumeration<Driver> driverlist=DriverManager.getDrivers();
-        while(driverlist.hasMoreElements()){
-            Driver driverClass=(Driver) driverlist.nextElement();
-            System.out.println(" "+driverClass.getClass().getName());
+    public void updateData(){
+        String sql_query="Update employee_payroll set salary='30000000' where id='2'; ";
+        try {
+            Connection connection=this.getConnection();
+            Statement statement=connection.createStatement();
+            long resultSet=statement.executeLargeUpdate(sql_query);
+        } catch (SQLException throwables) {
+            throwables.printStackTrace();
         }
     }
 }
