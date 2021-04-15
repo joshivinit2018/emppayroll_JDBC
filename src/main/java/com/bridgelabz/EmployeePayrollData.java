@@ -1,13 +1,15 @@
-package com.bridgelabz;
+ package com.bridgelabz;
 
 import java.sql.Date;
 
 public class EmployeePayrollData {
+
     public int id;
     public String name;
     public Date date;
     public double salary;
     public String gender;
+
 
     public EmployeePayrollData(int id, String name, Date date, double salary, String gender)
 
@@ -18,6 +20,11 @@ public class EmployeePayrollData {
         this.salary=salary;
         this.gender=gender;
     }
+
+    public int getId() {
+        return id;
+    }
+
     public void setId(int id) {
         this.id = id;
     }
@@ -64,6 +71,8 @@ public class EmployeePayrollData {
                 ", gender='" + gender + '\'' +
                 '}';
 
-
     }
+
+
+
 }
