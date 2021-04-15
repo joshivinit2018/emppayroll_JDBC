@@ -1,69 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.bridgelabz.Employee_Payroll_Test" tests="3" skipped="0" failures="0" errors="0" timestamp="2021-04-15T06:53:07" hostname="DESKTOP-011U31P" time="4.156">
+<testsuite name="com.bridgelabz.Employee_Payroll_Test" tests="5" skipped="0" failures="0" errors="0" timestamp="2021-04-15T08:23:42" hostname="DESKTOP-011U31P" time="1.361">
   <properties/>
-  <testcase name="givenNewSalaryForEmployee_whenUpdate_shouldSyncWithDB()" classname="com.bridgelabz.Employee_Payroll_Test" time="3.008"/>
-  <testcase name="givenEmployeePayroll_WhenRetrieved_ShouldMatchEmpCount()" classname="com.bridgelabz.Employee_Payroll_Test" time="0.271"/>
-  <testcase name="givenDateRangeToEmployeePayRollInDB_WhenRetrieved_DataShouldMatchFilteredEmployeeCount()" classname="com.bridgelabz.Employee_Payroll_Test" time="0.874"/>
+  <testcase name="insert_new_employee_in_employee_table()" classname="com.bridgelabz.Employee_Payroll_Test" time="0.759"/>
+  <testcase name="given_sum_avg_min_max_count()" classname="com.bridgelabz.Employee_Payroll_Test" time="0.225"/>
+  <testcase name="givenNewSalaryForEmployee_whenUpdate_shouldSyncWithDB()" classname="com.bridgelabz.Employee_Payroll_Test" time="0.01"/>
+  <testcase name="givenEmployeePayroll_WhenRetrieved_ShouldMatchEmpCount()" classname="com.bridgelabz.Employee_Payroll_Test" time="0.292"/>
+  <testcase name="givenDateRangeToEmployeePayRollInDB_WhenRetrieved_DataShouldMatchFilteredEmployeeCount()" classname="com.bridgelabz.Employee_Payroll_Test" time="0.07"/>
   <system-out><![CDATA[Connecting to database: jdbc:mysql://localhost:3307/payroll_service?useSSL=false
-Connection successful: com.mysql.cj.jdbc.ConnectionImpl@15e962b1
+Connection successful: com.mysql.cj.jdbc.ConnectionImpl@30781c62
+Connecting to database: jdbc:mysql://localhost:3307/payroll_service?useSSL=false
+Connection successful: com.mysql.cj.jdbc.ConnectionImpl@12faae5c
+[EmployeePayrollData{id=1, name='bill', date=null, salary=0.0, gender='null'}, EmployeePayrollData{id=2, name='Terise', date=null, salary=0.0, gender='null'}, EmployeePayrollData{id=3, name='charle', date=null, salary=0.0, gender='null'}, EmployeePayrollData{id=16, name='Sam', date=null, salary=0.0, gender='null'}]
+Connecting to database: jdbc:mysql://localhost:3307/payroll_service?useSSL=false
+Connection successful: com.mysql.cj.jdbc.ConnectionImpl@282acc3d
+Gender: null
+Salary: 3.15E7
+[null, 3.15E7, 1.05E7, 500000.0, 3.0E7, 3]
+Gender: M
+Salary: 900000.0
+[M, 900000.0, 900000.0, 900000.0, 900000.0, 1, null, 3.15E7, 1.05E7, 500000.0, 3.0E7, 3]
+Connecting to database: jdbc:mysql://localhost:3307/payroll_service?useSSL=false
+Connection successful: com.mysql.cj.jdbc.ConnectionImpl@79956029
 1
 Connecting to database: jdbc:mysql://localhost:3307/payroll_service?useSSL=false
-Connection successful: com.mysql.cj.jdbc.ConnectionImpl@2a0c1338
-+++++++++++++++++++++++++++
-Id: 1
-FirstName: bill
-StartDate: null
-Salary: 0.0
-Gender: null
-+++++++++++++++++++++++++++
-Id: 2
-FirstName: Terise
-StartDate: null
-Salary: 0.0
-Gender: null
-+++++++++++++++++++++++++++
-Id: 3
-FirstName: charle
-StartDate: null
-Salary: 0.0
-Gender: null
+Connection successful: com.mysql.cj.jdbc.ConnectionImpl@48211ef1
+[EmployeePayrollData{id=1, name='bill', date=null, salary=0.0, gender='null'}, EmployeePayrollData{id=2, name='Terise', date=null, salary=0.0, gender='null'}, EmployeePayrollData{id=3, name='charle', date=null, salary=0.0, gender='null'}, EmployeePayrollData{id=16, name='Sam', date=null, salary=0.0, gender='null'}]
 Connecting to database: jdbc:mysql://localhost:3307/payroll_service?useSSL=false
-Connection successful: com.mysql.cj.jdbc.ConnectionImpl@6e456a81
-1
-Connecting to database: jdbc:mysql://localhost:3307/payroll_service?useSSL=false
-Connection successful: com.mysql.cj.jdbc.ConnectionImpl@11821abc
-+++++++++++++++++++++++++++
-Id: 1
-FirstName: bill
-StartDate: null
-Salary: 0.0
-Gender: null
-+++++++++++++++++++++++++++
-Id: 2
-FirstName: Terise
-StartDate: null
-Salary: 0.0
-Gender: null
-+++++++++++++++++++++++++++
-Id: 3
-FirstName: charle
-StartDate: null
-Salary: 0.0
-Gender: null
-Connecting to database: jdbc:mysql://localhost:3307/payroll_service?useSSL=false
-Connection successful: com.mysql.cj.jdbc.ConnectionImpl@68f5de7f
-+++++++++++++++++++++++++++
-Id: 2
-FirstName: Terise
-StartDate: null
-Salary: 0.0
-Gender: null
-+++++++++++++++++++++++++++
-Id: 3
-FirstName: charle
-StartDate: null
-Salary: 0.0
-Gender: null
+Connection successful: com.mysql.cj.jdbc.ConnectionImpl@4f45e87c
+[EmployeePayrollData{id=2, name='Terise', date=null, salary=0.0, gender='null'}, EmployeePayrollData{id=3, name='charle', date=null, salary=0.0, gender='null'}, EmployeePayrollData{id=16, name='Sam', date=null, salary=0.0, gender='null'}]
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

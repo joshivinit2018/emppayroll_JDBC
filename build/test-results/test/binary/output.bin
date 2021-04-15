@@ -1,60 +1,22 @@
 RConnecting to database: jdbc:mysql://localhost:3307/payroll_service?useSSL=false
-BConnection successful: com.mysql.cj.jdbc.ConnectionImpl@15e962b1
-1
+BConnection successful: com.mysql.cj.jdbc.ConnectionImpl@30781c62
 RConnecting to database: jdbc:mysql://localhost:3307/payroll_service?useSSL=false
-BConnection successful: com.mysql.cj.jdbc.ConnectionImpl@2a0c1338
-+++++++++++++++++++++++++++
-Id: 1
-FirstName: bill
-StartDate: null
-Salary: 0.0
-Gender: null
-+++++++++++++++++++++++++++
-Id: 2
-FirstName: Terise
-StartDate: null
-Salary: 0.0
-Gender: null
-+++++++++++++++++++++++++++
-Id: 3
-FirstName: charle
-StartDate: null
-Salary: 0.0
-Gender: null
-RConnecting to database: jdbc:mysql://localhost:3307/payroll_service?useSSL=false
-BConnection successful: com.mysql.cj.jdbc.ConnectionImpl@6e456a81
-1
+BConnection successful: com.mysql.cj.jdbc.ConnectionImpl@12faae5c
+¾[EmployeePayrollData{id=1, name='bill', date=null, salary=0.0, gender='null'}, EmployeePayrollData{id=2, name='Terise', date=null, salary=0.0, gender='null'}, EmployeePayrollData{id=3, name='charle', date=null, salary=0.0, gender='null'}, EmployeePayrollData{id=16, name='Sam', date=null, salary=0.0, gender='null'}]
 RConnecting to database: jdbc:mysql://localhost:3307/payroll_service?useSSL=false
-BConnection successful: com.mysql.cj.jdbc.ConnectionImpl@11821abc
-+++++++++++++++++++++++++++
-Id: 1
-FirstName: bill
-StartDate: null
-Salary: 0.0
+BConnection successful: com.mysql.cj.jdbc.ConnectionImpl@282acc3d
 Gender: null
-+++++++++++++++++++++++++++
-Id: 2
-FirstName: Terise
-StartDate: null
-Salary: 0.0
-Gender: null
-+++++++++++++++++++++++++++
-Id: 3
-FirstName: charle
-StartDate: null
-Salary: 0.0
-Gender: null
+Salary: 3.15E7
+,[null, 3.15E7, 1.05E7, 500000.0, 3.0E7, 3]
+Gender: M
+Salary: 900000.0
+Z[M, 900000.0, 900000.0, 900000.0, 900000.0, 1, null, 3.15E7, 1.05E7, 500000.0, 3.0E7, 3]
 RConnecting to database: jdbc:mysql://localhost:3307/payroll_service?useSSL=false
-BConnection successful: com.mysql.cj.jdbc.ConnectionImpl@68f5de7f
-+++++++++++++++++++++++++++
-Id: 2
-FirstName: Terise
-StartDate: null
-Salary: 0.0
-Gender: null
-+++++++++++++++++++++++++++
-Id: 3
-FirstName: charle
-StartDate: null
-Salary: 0.0
-Gender: null
+BConnection successful: com.mysql.cj.jdbc.ConnectionImpl@79956029
+1
+RConnecting to database: jdbc:mysql://localhost:3307/payroll_service?useSSL=false
+BConnection successful: com.mysql.cj.jdbc.ConnectionImpl@48211ef1
+¾[EmployeePayrollData{id=1, name='bill', date=null, salary=0.0, gender='null'}, EmployeePayrollData{id=2, name='Terise', date=null, salary=0.0, gender='null'}, EmployeePayrollData{id=3, name='charle', date=null, salary=0.0, gender='null'}, EmployeePayrollData{id=16, name='Sam', date=null, salary=0.0, gender='null'}]
+RConnecting to database: jdbc:mysql://localhost:3307/payroll_service?useSSL=false
+BConnection successful: com.mysql.cj.jdbc.ConnectionImpl@4f45e87c
+ð[EmployeePayrollData{id=2, name='Terise', date=null, salary=0.0, gender='null'}, EmployeePayrollData{id=3, name='charle', date=null, salary=0.0, gender='null'}, EmployeePayrollData{id=16, name='Sam', date=null, salary=0.0, gender='null'}]
