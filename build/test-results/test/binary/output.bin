@@ -1,0 +1,20 @@
+RConnecting to database: jdbc:mysql://localhost:3307/payroll_service?useSSL=false
+AConnection successful: com.mysql.cj.jdbc.ConnectionImpl@fbcb5d3
++++++++++++++++++++++++++++
+Id: 1
+FirstName: bill
+LastName: null
+Address: 0.0
+City: null
++++++++++++++++++++++++++++
+Id: 2
+FirstName: Terise
+LastName: null
+Address: 0.0
+City: null
++++++++++++++++++++++++++++
+Id: 3
+FirstName: charle
+LastName: null
+Address: 0.0
+City: null
