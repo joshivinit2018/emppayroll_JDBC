@@ -6,6 +6,8 @@ import org.junit.jupiter.api.Test;
 
 import java.sql.Date;
 import java.sql.SQLException;
+import java.time.Duration;
+import java.time.Instant;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -82,5 +84,18 @@ public class Employee_Payroll_Test {
         Assertions.assertEquals(27, employeePayrollDataList.size());
     }
 
+    @Test
+    public void Insert_Multiple_Records_Add_In_DataBase_using_threads() throws SQLException {
+        Employee_payroll employee_Payroll = new Employee_payroll();
+        List<EmployeePayrollData> list = new ArrayList<>();
+        list.add(new EmployeePayrollData(0, "shankar", Date.valueOf("2019-06-19"), 900000, "M"));
+        list.add(new EmployeePayrollData(0, "Sonia", Date.valueOf("2019-01-11"), 840000, "F"));
+        Instant Start = Instant.now();
+        employee_Payroll.UsingArrayListAddMultipleEmployee(list);
+        Instant end=Instant.now();
 
+        System.out.println("Duration of non thread process is: "+ Duration.between(Start,end));
+        List<EmployeePayrollData> employeePayrollDataList=employee_Payroll.readData();
+        Assertions.assertEquals(31, employeePayrollDataList.size());
+    }
 }
