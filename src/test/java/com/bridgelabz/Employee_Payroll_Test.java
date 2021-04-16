@@ -74,11 +74,13 @@ public class Employee_Payroll_Test {
     @Test
     public void insert_multiple_values_into_a_table_at_a_single_time() throws SQLException {
         Employee_payroll employee_Payroll = new Employee_payroll();
-        List<EmployeePayrollData> list=new ArrayList<>();
-        list.add(new EmployeePayrollData(0,"sandhya", Date.valueOf("2019-05-19"),600000,"F"));
-        list.add(new EmployeePayrollData(0,"Sheetal",Date.valueOf("2019-01-21"),800000,"F"));
+        List<EmployeePayrollData> list = new ArrayList<>();
+        list.add(new EmployeePayrollData(0, "sandhya", Date.valueOf("2019-05-19"), 600000, "F"));
+        list.add(new EmployeePayrollData(0, "Sheetal", Date.valueOf("2019-01-21"), 800000, "F"));
         employee_Payroll.UsingArrayListAddMultipleEmployee(list);
-        List<EmployeePayrollData> employeePayrollDataList=employee_Payroll.readData();
-        Assertions.assertEquals(27,employeePayrollDataList.size());
+        List<EmployeePayrollData> employeePayrollDataList = employee_Payroll.readData();
+        Assertions.assertEquals(27, employeePayrollDataList.size());
     }
+
+
 }
