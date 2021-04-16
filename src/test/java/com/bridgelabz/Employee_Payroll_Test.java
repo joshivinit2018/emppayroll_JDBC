@@ -98,4 +98,21 @@ public class Employee_Payroll_Test {
         List<EmployeePayrollData> employeePayrollDataList=employee_Payroll.readData();
         Assertions.assertEquals(31, employeePayrollDataList.size());
     }
+
+    @Test
+    public void using_synchronization_Insert_The_Record_in_table() throws SQLException {
+        Employee_payroll employee_Payroll = new Employee_payroll();
+        List<EmployeePayrollData> list=new ArrayList<>();
+        list.add(new EmployeePayrollData(8,"Harsh", Date.valueOf("2018-09-11"),700000,"M"));
+        list.add(new EmployeePayrollData(9,"Neha",Date.valueOf("2020-05-09"),790000,"F"));
+
+        Instant Start=Instant.now();
+        employee_Payroll.UsingArrayListAddMultipleEmployee(list);
+        Instant end=Instant.now();
+        System.out.println("Duration of non thread process is: "+ Duration.between(Start,end));
+
+        List<EmployeePayrollData> employeePayrollDataList=employee_Payroll.readData();
+        Assertions.assertEquals(33,employeePayrollDataList.size());
+
+    }
 }

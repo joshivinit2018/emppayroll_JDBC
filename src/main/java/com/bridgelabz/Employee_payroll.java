@@ -6,14 +6,17 @@ import java.util.*;
 
 public class Employee_payroll {
     private String employeePayrollData;
+    private int ConnectionCounter=0;
 
-    private Connection getConnection() throws SQLException {
+    private synchronized Connection getConnection() throws SQLException {
         String jdbcURL = "jdbc:mysql://localhost:3307/payroll_service?useSSL=false";
         String username = "root";
         String password = "admin123";
-        Connection connection;
+        Connection connection = null;
         System.out.println("Connecting to database: " +jdbcURL);
+        System.out.println("Processing Thread "+Thread.currentThread().getName()+"Connecting to database with id "+ConnectionCounter);
         connection= DriverManager.getConnection(jdbcURL,username,password);
+        System.out.println("Processing Thread "+Thread.currentThread().getName()+" id "+ConnectionCounter+ " Connection was sucessfull!!! " +connection);
         System.out.println("Connection successful: "+connection);
         return connection;
 
