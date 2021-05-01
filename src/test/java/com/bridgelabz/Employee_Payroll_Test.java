@@ -23,7 +23,7 @@ public class Employee_Payroll_Test {
     public void givenEmployeePayroll_WhenRetrieved_ShouldMatchEmpCount() {
         Employee_payroll employee_Payroll = new Employee_payroll();
         List<EmployeePayrollData> employeePayrollDataList = employee_Payroll.readData();
-        Assertions.assertEquals(4, employeePayrollDataList.size());
+        Assertions.assertEquals(33, employeePayrollDataList.size());
 
     }
 
